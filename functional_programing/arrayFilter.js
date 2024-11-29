@@ -19,4 +19,8 @@ const mhs = [
 
 const eligiberForScholarshipStudents = mhs.filter((student) => student.score > 80);
 
+const totalScore = mhs.reduce((acc, student) => acc + student.score, 0);
+
 console.log(eligiberForScholarshipStudents);
+
+console.log(totalScore);
