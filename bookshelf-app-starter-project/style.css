@@ -1,0 +1,143 @@
+/* Reset dasar */
+body, h1, h2, h3, p, form, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Gaya dasar untuk body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #5a9df8;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  /* Main container */
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* Section styling */
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #4a90e2;
+    border-bottom: 2px solid #e2e2e2;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Form styling */
+  form div {
+    margin-bottom: 1rem;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input[type="text"], form input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  form button {
+    background-color: #5a9df8;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  form button:hover {
+    background-color: #4a90e2;
+  }
+  
+  /* Buku item styling */
+  #incompleteBookList, #completeBookList {
+    margin-top: 1rem;
+  }
+  
+  [data-testid="bookItem"] {
+    border: 1px solid #e2e2e2;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  [data-testid="bookItemTitle"] {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  [data-testid="bookItemAuthor"],
+  [data-testid="bookItemYear"] {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  [data-testid="bookItem"] button {
+    background-color: #5a9df8;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  
+  [data-testid="bookItem"] button:hover {
+    background-color: #4a90e2;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    main {
+      padding: 1rem;
+    }
+  
+    form input[type="text"], form input[type="number"] {
+      width: 100%;
+    }
+  
+    [data-testid="bookItem"] {
+      padding: 0.5rem;
+    }
+  }
+  
